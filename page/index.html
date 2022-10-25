@@ -22,19 +22,22 @@
 <!--home section-->
 <section id="home">
     <nav>
-        <a href="#" class="logo">My Portfolio</a>
+        <a href="#" class="logo"><img src="../img/logo.svg" alt=""></a>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#certificate">Certificate</a></li>
             <li><a href="#skill">Skill</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="text-container">
-        <p>Hello, Coder <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25" alt=""></p>
-        <p>I&#8217;M Saleh Rashid B</p>
+        <p id="introduction">Hello, Coder <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
+                                               width="25" alt=""></p>
+        <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1500" id="name"><p>I&#8217;M Saleh Rashid
+            B</p></div>
         <p>I&#8217;M <span id="typed"></span></p>
-        <p>You and me</p>
+        <p>A passionate flutter developer from Indonesia</p>
         <form>
             <button class="btn-hire">Hire me</button>
 
@@ -44,7 +47,8 @@
                 CV</a></button>
         </form>
     </div>
-    <div data-aos="fade-right" data-aos-duration="3000"><img src="../img/programming.jpg" alt="" class="model"></div>
+    <div data-aos="fade-right" data-aos-duration="3000" class="model"><img src="../img/programming.png" alt=""
+                                                                           style="width: 35em"></div>
 </section>
 
 <!--about section-->
@@ -78,6 +82,24 @@
     </div>
 </section>
 
+<!--certificate section-->
+<section class="certificate" id="certificate">
+    <p>Certificate</p>
+    <div data-aos="fade-down" data-aos-duration="1000">
+        <div class="top-cer" style="text-align: center">
+            <img src="../img/certificate/cer-html.png" alt="">
+            <img src="../img/certificate/cer-idn-itfest.png" alt="">
+        </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="bottom-cer" style="text-align: center">
+            <img src="../img/certificate/cer-dart.png" alt="">
+            <img src="../img/certificate/cer-flutter.png" alt="">
+        </div>
+    </div>
+</section>
+
 <!--skill section-->
 <section class="services" id="skill">
     <div class="services-text">
@@ -89,41 +111,34 @@
             applications.</p>
     </div>
     <div>
-        <div class="box-container">
-            <div class="box1">
-                <span>1</span>
-                <p class="heading">Flutter</p>
-                <p class="details">
-                <div data-aos="fade-zoom-in"
-                     data-aos-easing="ease-in-back"
-                     data-aos-delay="300"
-                     data-aos-offset="0"><img src="../img/lang-logo/flutter.png" alt="">
+        <div data-aos="fade-down">
+            <div class="box-container">
+                <div class="box1">
+                    <span>1</span>
+                    <p class="heading">Flutter</p>
+                    <p class="details">
+                    <div></div>
+                    <img src="../img/lang-logo/flutter.png" alt="">
+                    <button id="btn-box-info1">Read more</button>
                 </div>
-                <button id="btn-box-info1">Read more</button>
-            </div>
 
-            <div class="box2">
-                <span>2</span>
-                <p class="heading">Kotlin</p>
-                <p class="details">
-                <div data-aos="fade-zoom-in"
-                     data-aos-easing="ease-in-back"
-                     data-aos-delay="300"
-                     data-aos-offset="0"><img src="../img/lang-logo/kotlin.png" alt="">
+                <div class="box2">
+                    <span>2</span>
+                    <p class="heading">Kotlin</p>
+                    <p class="details">
+                    <div></div>
+                    <img src="../img/lang-logo/kotlin.png" alt="">
+                    <button id="btn-box-info2">Read more</button>
                 </div>
-                <button id="btn-box-info2">Read more</button>
-            </div>
 
-            <div class="box3">
-                <span>3</span>
-                <p class="heading">php</p>
-                <p class="details">
-                <div data-aos="fade-zoom-in"
-                     data-aos-easing="ease-in-back"
-                     data-aos-delay="300"
-                     data-aos-offset="0"><img src="../img/lang-logo/php.png" alt="">
+                <div class="box3">
+                    <span>3</span>
+                    <p class="heading">Website</p>
+                    <p class="details">
+                    <div></div>
+                    <img src="../img/lang-logo/web.png" alt="">
+                    <button id="btn-box-info3">Read more</button>
                 </div>
-                <button id="btn-box-info3">Read more</button>
             </div>
         </div>
     </div>
@@ -145,6 +160,8 @@
     <a href="https://twitter.com/SalehRashid123" target="_blank" class="twitter"><i class='bx bxl-twitter'></i></a>
     <a href="https://www.youtube.com/channel/UChLxnrCBFKSWTF_xI3QlPJA" target="_blank" class="youtube"><i
             class='bx bxl-youtube'></i></a>
+    <a href="https://www.instagram.com/salehrashid4/" target="_blank" class="instagram"><i
+            class='bx bxl-instagram'></i></a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -195,8 +212,8 @@
 
     $(document).on("click", "#btn-box-info3", function (event) {
         Swal.fire({
-            title: '<b> PHP </b>',
-            html: 'saya berpengalaman dalam dasar dasar php',
+            title: '<b> Website </b>',
+            html: 'saya berpengalaman dalam membuat sebuah website',
             showCancelButton: true,
             showCloseButton: true,
             focusConfirm: false
